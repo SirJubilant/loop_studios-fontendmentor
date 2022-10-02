@@ -32,5 +32,12 @@ close.addEventListener("click", ()=> {
 
 window.onscroll = () => {
     navlist.classList.remove('active');
+
+
+    
+    if (close.classList.contains('menu-active')) {
+        close.classList.remove('menu-active')
+        menu.classList.add('menu-active')
+    }
 };
 
